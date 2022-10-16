@@ -35,7 +35,7 @@
                         <td>{{post.creator.first_name}} {{post.creator.last_name}}
                         <td>{{post.created_at.strftime(dtformat)}}
                         <td>{{post.content}}
-                        <td><a href="/sendMessage/{{post.user_id}}">Message</td>
+                        <td><a href="/sendMessage/{{post.user_id}}"> Send Message</td>
                     {% if user.id == post.user_id %}
                         <td> <a href="/delete_post/{{ post.id }}" class="p-5">Delete</a>
                     {% endif %}
